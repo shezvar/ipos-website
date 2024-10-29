@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iPOS | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./css/global.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+</head>
+
+<body>
+    <div id="header-container"></div>
+
+    <div class="relative">
+        <main class="relative">
+
+            <!-- Articles section starts -->
+            <div class="relative mx-auto max-w-7xl px-8">
+                <div class="flex lg:pt-40 pt-32">
+                    <div class="relative lg:basis-10/12 basis-full mb-8">
+                        <a href="/articles.html" class="inline-flex text-cyan-600 text-base font-medium py-2 px-6 border border-slate-200 rounded-full mb-4 -ml-2 hover:bg-slate-100">Back</a>
+                        <div class="lg:text-6xl text-4xl font-semibold leading-tight text-slate-900 mb-2">How to Build a Strong Credit History in Business.</div>
+                        <h4 class="text-cyan-600 text-lg font-medium leading-loose">Inventory</h4>
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <div class="overflow-hidden w-full lg:h-[40rem] h-[20rem] rounded-3xl">
+                        <img src="https://images.unsplash.com/photo-1599658880436-c61792e70672?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                    <div class="mx-auto max-w-5xl lg:px-8 px-0 *:text-slate-700 py-16 space-y-16">
+                        <div class="lg:space-y-8 space-y-4">
+                            <h1 class="font-semibold text-2xl mb-2">Introduction</h1>
+                        <p class="text-lg">Our primary objective is to enhance the AI’s ability to comprehend complex queries and provide accurate and contextually relevant responses. We aim to equip it with the capability to reason, analyze, and synthesize information from diverse sources, enabling users to tap into a vast pool of knowledge effortlessly.
+                            <br/>
+                            <br/>
+                            As a Customer Support Specialist, we expect you to be up-to-date with the latest digital technologies and social media trends. You should have excellent communication skills and be able to assist our customers in a fast, efficient and professional manner. If you enjoy fixing issues and helping improve the overall customer experience, this job is for you
+                            Real-time messaging and file sharing for team communication and collaboration.
+                            Organize tasks into boards, lists, and cards for visual project tracking.
+                            Connects various apps to automate repetitive tasks and data transfers.</p>
+                            <ul class="list-inside list-disc *:pb-3 *:text-lg">
+                                <li>Real-time messaging and file sharing for team communication and collaboration.</li>
+                                <li>Organize tasks into boards, lists, and cards for visual project tracking.</li>
+                                <li>Connects various apps to automate repetitive tasks and data transfers.</li>
+                            </ul>
+                        </div>
+                            
+                            <div class="p-2 bg-gray-200 rounded-lg">
+                                <div class="p-40 bg-white rounded-md"></div>
+                            </div>
+                            <p class="text-lg">Our primary objective is to enhance the AI’s ability to comprehend complex queries and provide accurate and contextually relevant responses. We aim to equip it with the capability to reason, analyze, and synthesize information from diverse sources, enabling users to tap into a vast pool of knowledge effortlessly.
+                                <br/>
+                                <br/>
+                                As a Customer Support Specialist, we expect you to be up-to-date with the latest digital technologies and social media trends. You should have excellent communication skills and be able to assist our customers in a fast, efficient and professional manner. If you enjoy fixing issues and helping improve the overall customer experience, this job is for you
+                                Real-time messaging and file sharing for team communication and collaboration.
+                                Organize tasks into boards, lists, and cards for visual project tracking.
+                                Connects various apps to automate repetitive tasks and data transfers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mx-auto max-w-5xl my-20 px-8">
+                <div class="flex">
+                    <div class="text-3xl font-semibold leading-tight text-slate-900">Related Posts</div>
+                </div>
+            
+                <div class="grid lg:grid-cols-3 gap-10 lg:pt-8 pt-8" id="parentDiv">
+                    <template id="myTemplate">
+                        <a href="/blog-details.html" class="flex flex-col group bg-white overflow-hidden">
+                            <div class="pt-4 lg:h-[8rem] h-auto">
+                                <h3 class="text-xl font-semibold group-hover:text-cyan-600">Get inspiration for your business, read other’s testimonials.</h3>
+                            </div>
+                        </a>
+                      </template>
+                      
+                      <script>
+                        const template = document.getElementById('myTemplate');
+                        const container = document.getElementById('parentDiv');
+                        const numberOfDuplicates = 6; // Change this to your desired number
+                      
+                        for (let i = 0; i < numberOfDuplicates; i++) {
+                          const templateContent = template.content.cloneNode(true);
+                          container.appendChild(templateContent);
+                        }
+                      </script>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script type="module">
+        import { loadHeader } from './components/header.js'; 
+        loadHeader('header-container'); 
+    </script>
+
+    <script type="module">
+        import { loadHeader } from './components/footer.js'; 
+        loadHeader('footer-container'); 
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+</body>
+
+</html>

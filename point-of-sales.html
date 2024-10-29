@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iPOS | Point of Sales</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./css/global.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+</head>
+
+<body>
+    <div id="header-container"></div>
+
+    <div class="relative">
+        <main class="relative">
+
+            <!-- Hero section starts -->
+            <div class="relative bg-gradient-to-b from-white to-purple-600/20 lg:pt-0 pb-12 lg:pb-20 pt-20 overflow-hidden">
+
+                <div class="relative mx-auto max-w-7xl sm:px-6 px-8 pb-16 pt-8 lg:pt-48 z-[2] overflow-hidden">
+                    <div class="flex flex-col lg:flex-row">
+                        <div class="basis-full lg:basis-4/12 mr-auto">
+                            <div class="">
+                                <div class="text-purple-700 text-lg font-medium leading-loose uppercase mb-2">Point of
+                                    Sales</div>
+                                <h1 class="text-4xl font-medium tracking-tight text-slate-900 mb-6">Access a Fast &
+                                    Seamless Point of Sales system with iPOS</h1>
+                                <p class="text-lg tracking-tight text-slate-600">A system that allows your business to
+                                    accept payments from customers and keep track of sales.</p>
+                            </div>
+
+                            <div class="mt-8 flex gap-2">
+                                <a class="inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-cyan-700 hover:text-slate-100"
+                                    href="#">Get started for free</a>
+                                <a class="inline-flex items-center justify-center py-2 px-4 text-sm font-semibold text-slate-900 hover:text-slate-600"
+                                    href="#">Contact Sales</a>
+                            </div>
+                        </div>
+
+                        <div class="basis-full lg:basis-6/12 lg:mt-0 mt-16">
+                            <img alt="" src="/images/product-features/pos-hero-image.png" class="h-[auto]">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative mx-auto max-w-7xl px-8 overflow-hidden">
+                    <div class="relative grid md:grid-cols-3 gap-6 grid-cols-1 max-w-4xl">
+                        <div class="relative grid gap-y-1">
+                            <img src="./images/icons/ease-of-use.svg" alt="Ease of use" class="mb-1" />
+                            <p class="flex font-semibold text-base text-slate-900">Effortless Transactions</p>
+                            <p class="text-sm text-slate-600">Our Point of Sales system streamlines your sales process,
+                                making every transaction smooth and efficient.</p>
+                        </div>
+
+                        <div class="relative grid gap-y-1">
+                            <img src="./images/icons/concrete-security.svg" alt="Ease of use" class="mb-1" />
+                            <p class="flex font-semibold text-base text-slate-900">Enhanced Experience</p>
+                            <p class="text-sm text-slate-600">User-friendly system and fast checkout lead to a positive
+                                shopping experience and increased customer loyalty.</p>
+                        </div>
+
+                        <div class="relative grid gap-y-1">
+                            <img src="./images/icons/cloud-storage.svg" alt="Ease of use" class="mb-1" />
+                            <p class="flex font-semibold text-base text-slate-900">Flexible Selection</p>
+                            <p class="text-sm text-slate-600">Effortlessly manage your sales: Select items, mark
+                                favorites, add or suspend sales with ease.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="absolute lg:-top-16 top-16 right-0 left-0 z-[1]">
+                    <div class="relative w-full bg-cover h-screen opacity-[.05]" style="background-image: url(/images/product-features/pos-hero-bg.svg);"></div>
+                </div>
+
+            </div>
+            <!-- Hero section ends -->
+
+            <div class="mx-auto max-w-7xl md:my-40 my-20 px-8">
+                <div class="flex flex-col lg:flex-row">
+                    <div class="lg:basis-5/12 basis-full mr-0 lg:mr-auto">
+
+                        <div class="flex flex-col gap-4 mb-6">
+                            <div class="text-3xl font-semibold leading-tight text-slate-900">Your Sales, Your Way. Checkout Made Easy.</div>
+                            <div class="text-lg text-slate-600">Find the perfect items for your sale, whether from your inventory, favorites, or even on the spot.</div>
+                        </div>
+
+                        <div class="border-b border-gray-200">
+                            <div class="py-4 cursor-pointer" data-accordion-target="#accordion-1"
+                                data-accordion-image="#accordion-1-image">
+                                <div class="flex cursor-pointer items-center justify-between">
+                                    <h4 class="text-lg font-semibold text-slate-900">Inventory</h4>
+                                    <img src="./images/icons/chevron-down.svg"
+                                        class="size-6 transition-all duration-500 group-focus:-rotate-180" />
+                                </div>
+                            </div>
+                            <div id="accordion-1" class="hidden pb-4">
+                                <div class="">
+                                    <div class="bg-purple-100 rounded-2xl shadow-md w-full p-2 my-6 lg:hidden">
+                                        <div class="max-h-[24rem] rounded-xl w-full overflow-hidden">
+                                            <img src="./images/product-features/pos-inventory.svg" alt="" class="w-full"/>
+                                        </div>
+                                    </div>
+                                    <p class="mb-2 text-slate-600 text-sm">Browse and select from your complete list of
+                                        available products, ensuring you have access to your entire stock.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-b border-gray-200">
+                            <div class="py-4 cursor-pointer" data-accordion-target="#accordion-2"
+                                data-accordion-image="#accordion-2-image">
+                                <div class="flex cursor-pointer items-center justify-between">
+                                    <h4 class="text-lg font-semibold text-slate-900">Favourite</h4>
+                                    <img src="./images/icons/chevron-down.svg"
+                                        class="size-6 transition-all duration-500 group-focus:-rotate-180" />
+                                </div>
+                            </div>
+                            <div id="accordion-2" class="hidden pb-4">
+                                <div class="">
+                                    <div class="bg-green-100 rounded-2xl shadow-md w-full p-2 my-6 lg:hidden">
+                                        <div class="max-h-[24rem] rounded-xl w-full overflow-hidden">
+                                            <img src="./images/product-features/pos-favourite.svg" alt="" class="w-full" />
+                                        </div>
+                                    </div>
+                                    <p class="mb-2 text-slate-600 text-sm">Browse and select from your complete list of
+                                        available products, ensuring you have access to your entire stock.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-b border-gray-200">
+                            <div class="py-4 cursor-pointer" data-accordion-target="#accordion-3"
+                                data-accordion-image="#accordion-3-image">
+                                <div class="flex cursor-pointer items-center justify-between">
+                                    <h4 class="text-lg font-semibold text-slate-900">New</h4>
+                                    <img src="./images/icons/chevron-down.svg"
+                                        class="size-6 transition-all duration-500 group-focus:-rotate-180" />
+                                </div>
+                            </div>
+                            <div id="accordion-3" class="hidden pb-4">
+                                <div class="">
+                                    <div class="bg-blue-100 rounded-2xl shadow-md w-full p-2 my-6 lg:hidden">
+                                        <div class="max-h-[24rem] rounded-xl w-full overflow-hidden">
+                                            <img src="./images/product-features/pos-new.svg" alt="" class="w-full"/>
+                                        </div>
+                                    </div>
+                                    <p class="mb-2 text-slate-600 text-sm">Browse and select from your complete list of
+                                        available products, ensuring you have access to your entire stock.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <div class="py-4 cursor-pointer" data-accordion-target="#accordion-4"
+                                data-accordion-image="#accordion-4-image">
+                                <div class="flex cursor-pointer items-center justify-between">
+                                    <h4 class="text-lg font-semibold text-slate-900">Suspended</h4>
+                                    <img src="./images/icons/chevron-down.svg"
+                                        class="size-6 transition-all duration-500 group-focus:-rotate-180" />
+                                </div>
+                            </div>
+                            <div id="accordion-4" class="hidden pb-4">
+                                <div class="">
+                                    <div class="bg-red-100 rounded-2xl shadow-md w-full p-2 my-6 lg:hidden">
+                                        <div class="max-h-[24rem] rounded-xl w-full overflow-hidden">
+                                            <img src="./images/product-features/pos-suspended.svg" alt="" class="w-full" />
+                                        </div>
+                                    </div>
+                                    <p class="mb-2 text-slate-600 text-sm">Browse and select from your complete list of
+                                        available products, ensuring you have access to your entire stock.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="lg:basis-6/12 basis-full lg:block hidden relative">
+                        <div id="accordion-1-image" class="bg-purple-100 p-4 transition-all duration-300 rounded-2xl">
+                            <img src="./images/product-features/pos-inventory.svg" alt=""
+                                class="w-full bg-cover rounded-xl overflow-hidden shadow-md" />
+                        </div>
+                        <div id="accordion-2-image"
+                            class="bg-green-100 hidden p-4 absolute top-0 left-0 w-full transition-all duration-300 rounded-2xl">
+                            <img src="./images/product-features/pos-favourite.svg" alt=""
+                                class="w-full bg-cover rounded-xl overflow-hidden shadow-md" />
+                        </div>
+                        <div id="accordion-3-image"
+                            class="bg-blue-100 hidden p-4 absolute top-0 left-0 w-full transition-all duration-300 rounded-2xl">
+                            <img src="./images/product-features/pos-new.svg" alt=""
+                                class="w-full bg-cover rounded-xl overflow-hidden shadow-md" />
+                        </div>
+                        <div id="accordion-4-image"
+                            class="bg-red-100 hidden p-4 absolute top-0 left-0 w-full transition-all duration-300 rounded-2xl">
+                            <img src="./images/product-features/pos-suspended.svg" alt=""
+                                class="w-full bg-cover rounded-xl overflow-hidden shadow-md" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+
+            <!-- Other features starts -->
+            <div class="mx-auto max-w-7xl md:my-40 my-20 px-8">
+                <div class="grid lg:grid-cols-3 gap-8">
+
+                    <div class="p-6 pb-6 bg-slate-100 rounded-xl text-center">
+                        <div class="rounded-xl shadow-lg overflow-hidden h-[20rem]">
+                            <img src="./images/product-features/pos-inventory.svg" alt="" class="w-full bg-cover" />
+                        </div>
+                        <div class="mt-4">
+                            <div class="font-semibold text-cyan-600 text-lg mb-1">Invoice Management</div>
+                            <p class="text-sm text-slate-600">Search for specific products in your inventory and include them in the checkout.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pb-6 bg-slate-100 rounded-xl text-center">
+                        <div class="rounded-xl shadow-lg overflow-hidden h-[20rem]">
+                            <img src="./images/product-features/pos-receipt-gen.svg" alt="" class="w-full bg-cover" />
+                        </div>
+                        <div class="mt-4">
+                            <div class="font-semibold text-cyan-600 text-lg mb-1">Receipt Generation</div>
+                            <p class="text-sm text-slate-600">Instantly create a detailed and professional receipt summarizing the customer's purchase.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pb-6 bg-slate-100 rounded-xl text-center">
+                        <div class="rounded-xl shadow-lg overflow-hidden h-[20rem]">
+                            <img src="./images/product-features/pos-wallet-mgt.svg" alt="" class="w-full bg-cover" />
+                        </div>
+                        <div class="mt-4">
+                            <div class="font-semibold text-cyan-600 text-lg mb-1">Wallet Management</div>
+                            <p class="text-sm text-slate-600">Let your customer use their available wallet funds to pay for part or all of their purchase.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-100 lg:p-12 p-6 rounded-xl mt-7">
+                    <div class="flex lg:items-center lg:flex-row flex-col gap-8">
+                        <div class="lg:basis-4/12 basis-full lg:order-2">
+                            <div class="rounded-lg shadow-md overflow-hidden">
+                                <img src="./images/product-features/pos-summary.svg" class="w-full" alt="" />
+                            </div>
+                        </div>
+                        <div class="lg:basis-5/12 mr-auto lg:order-1 lg:text-left text-center">
+                            <div class="text-lg lg:text-3xl font-semibold text-slate-900 ">Manage Discount, Tax and Checkout at a glance</div>
+                            <p class="text-base text-slate-600 my-4">Empower your sales process with strategic discounts to boost customer loyalty, automated tax calculations for worry-free compliance, and a streamlined, single-page view for maximum efficiency.</p>
+                            <a href="#" class="inline-block bg-cyan-600 text-white py-2 px-6 font-semibold rounded-full mt-4">Start Selling</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Other features ends -->
+
+            <!-- Resources section starts -->
+            <div id="resources-container"></div>
+            <!-- Resources section ends -->
+
+            <!-- Mobile app section starts -->
+            <div id="mobileapp-container"></div>
+             <!-- Mobile app section ends -->
+        </main>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script type="module">
+        import { loadHeader } from './components/resources.js'; 
+        loadHeader('resources-container'); 
+    </script>
+
+    <script type="module">
+        import { loadHeader } from './components/mobileapp.js'; 
+        loadHeader('mobileapp-container'); 
+    </script>
+
+    <script type="module">
+        import { loadHeader } from './components/footer.js'; 
+        loadHeader('footer-container'); 
+    </script>
+
+    <script type="module">
+        import { loadHeader } from './components/header.js'; 
+        loadHeader('header-container'); 
+    </script>
+
+    <script>
+        const accordionHeaders = document.querySelectorAll('[data-accordion-target]');
+
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const targetId = header.getAttribute('data-accordion-target');
+                const targetImageId = header.getAttribute('data-accordion-image');
+
+                // Hide all content and images
+                accordionHeaders.forEach(h => {
+                    const contentId = h.getAttribute('data-accordion-target');
+                    const imageId = h.getAttribute('data-accordion-image');
+                    document.querySelector(contentId).classList.add('hidden');
+                    document.querySelector(imageId).classList.add('hidden');
+                });
+
+                // Show the clicked content and image
+                document.querySelector(targetId).classList.remove('hidden');
+                document.querySelector(targetImageId).classList.remove('hidden');
+            });
+        });
+
+        // Show the first section by default
+        document.querySelector('#accordion-1').classList.remove('hidden');
+        document.querySelector('#accordion-1-image').classList.remove('hidden');
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+</body>
+
+</html>

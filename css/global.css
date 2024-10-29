@@ -1,0 +1,47 @@
+/* testimony animation */
+* {
+    -webkit-font-smoothing: antialiased !important;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee {
+    display: flex;
+    width: 100%;
+    animation: marquee 50s linear infinite;
+}
+
+
+/* Modal CSS */
+
+
+
+body.modal-open {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: .5rem; /* Set the width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent; /* Color of the track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #d3d3d3; /* Color of the   
+   thumb */
+    border-radius: 5px; /* Round the thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #aaaaaa; /* Color of the thumb on hover */
+  }
+
